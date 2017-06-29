@@ -1,0 +1,1575 @@
+desc: (none)
+cmd: ./test
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=4788684
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=7731043
+mem_heap_B=7366099
+mem_heap_extra_B=3365
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=11533580
+mem_heap_B=10277075
+mem_heap_extra_B=3573
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=15072345
+mem_heap_B=12258982
+mem_heap_extra_B=3474
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=18060750
+mem_heap_B=13587366
+mem_heap_extra_B=3538
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=21048633
+mem_heap_B=14902694
+mem_heap_extra_B=3586
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=24036291
+mem_heap_B=16213670
+mem_heap_extra_B=3618
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=27023818
+mem_heap_B=17524646
+mem_heap_extra_B=3650
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=30011214
+mem_heap_B=18835622
+mem_heap_extra_B=3666
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=32998479
+mem_heap_B=20146598
+mem_heap_extra_B=3714
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=35985613
+mem_heap_B=21457574
+mem_heap_extra_B=3714
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=38972633
+mem_heap_B=22768550
+mem_heap_extra_B=3698
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=41959522
+mem_heap_B=24079526
+mem_heap_extra_B=3714
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=44946259
+mem_heap_B=25390758
+mem_heap_extra_B=3738
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=47933010
+mem_heap_B=26701734
+mem_heap_extra_B=3770
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=52102298
+mem_heap_B=26685574
+mem_heap_extra_B=3754
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=56785363
+mem_heap_B=26664462
+mem_heap_extra_B=3762
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=59772050
+mem_heap_B=26664718
+mem_heap_extra_B=3754
+mem_stacks_B=0
+heap_tree=detailed
+n3: 26664718 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n6: 25346048 0x81A0D1F: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+  n1: 18350080 0x7BE5F52: i965_create_buffer_internal (i965_drv_video.c:2690)
+   n1: 18350080 0x7BE601D: i965_CreateBuffer (i965_drv_video.c:2745)
+    n1: 18350080 0x4E35D61: vaCreateBuffer (va.c:1142)
+     n1: 18350080 0x50D4C4E: YamiMediaCodec::VaapiBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, VABufferType, unsigned int, void const*, void**) (VaapiBuffer.cpp:43)
+      n1: 18350080 0x51067F5: YamiMediaCodec::VaapiCodedBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, unsigned int) (vaapicodedbuffer.cpp:30)
+       n1: 18350080 0x5114747: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1258)
+        n1: 18350080 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+         n1: 18350080 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+          n0: 18350080 0x401456: main (in /home/snow/751Issue/test)
+  n3: 3145728 0x7C1CE56: intel_batchbuffer_reset (intel_batchbuffer.c:62)
+   n4: 2097152 0x7C1CF79: intel_batchbuffer_new (intel_batchbuffer.c:112)
+    n1: 524288 0x7BE3A14: i965_driver_data_init (i965_drv_video.c:6622)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A2A: i965_driver_data_init (i965_drv_video.c:6623)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BED1C7: intel_enc_hw_context_init (i965_encoder.c:1425)
+     n1: 524288 0x7BE5839: i965_CreateContext (i965_drv_video.c:2485)
+      n1: 524288 0x4E35C20: vaCreateContext (va.c:1097)
+       n1: 524288 0x50D8206: YamiMediaCodec::VaapiContext::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiConfig> const&, int, int, int, unsigned int*, int) (vaapicontext.cpp:129)
+        n1: 524288 0x510B70D: YamiMediaCodec::VaapiEncoderBase::initVA() (vaapiencoder_base.cpp:582)
+         n1: 524288 0x510BEB7: YamiMediaCodec::VaapiEncoderBase::start() (vaapiencoder_base.cpp:97)
+          n0: 524288 0x40135C: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7C32671: gen9_avc_pak_pipeline (gen9_avc_encoder.c:7336)
+     n1: 524288 0x7BEDC60: intel_encoder_end_picture (i965_encoder.c:1364)
+      n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+       n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+        n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+         n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+          n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+           n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+            n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n1: 1048576 0x7C02B9B: i965_image_pl2_processing (i965_post_processing.c:5217)
+    n2: 1048576 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+     n1: 524288 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+      n0: 524288 0x4013ED: main (in /home/snow/751Issue/test)
+     n1: 524288 0x7BED988: intel_encoder_check_yuv_surface.isra.17 (i965_encoder.c:187)
+      n1: 524288 0x7BEDDA8: intel_encoder_end_picture (i965_encoder.c:1293)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 2621440 0x7BE3178: i965_MapBuffer (i965_drv_video.c:2826)
+   n1: 2621440 0x4E35E91: vaMapBuffer (va.c:1180)
+    n0: 2621440 0x40137A: main (in /home/snow/751Issue/test)
+  n1: 458752 0x7BFE29E: gen8_gpe_load_kernels (i965_gpe_utils.c:1243)
+   n0: 458752 in 9 places, all below massif's threshold (1.00%)
+  n0: 442368 in 8 places, all below massif's threshold (1.00%)
+  n1: 327680 0x7C0E41D: gen8_pp_object_walker (gen8_post_processing.c:1448)
+   n1: 327680 0x7BD72BB: gen9_post_processing (gen9_post_processing.c:423)
+    n1: 327680 0x7C02B8B: i965_image_pl2_processing (i965_post_processing.c:4740)
+     n1: 327680 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+      n1: 327680 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+       n0: 327680 0x4013ED: main (in /home/snow/751Issue/test)
+ n0: 1048576 0x4010ED: main (in /home/snow/751Issue/test)
+ n0: 270094 in 137 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=62758737
+mem_heap_B=26664974
+mem_heap_extra_B=3762
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=65745424
+mem_heap_B=26665230
+mem_heap_extra_B=3834
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=70022759
+mem_heap_B=27214598
+mem_heap_extra_B=3858
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=73009446
+mem_heap_B=27214854
+mem_heap_extra_B=3866
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=75996133
+mem_heap_B=27215110
+mem_heap_extra_B=3874
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=78982820
+mem_heap_B=27215366
+mem_heap_extra_B=3850
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=81969507
+mem_heap_B=27215622
+mem_heap_extra_B=3890
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=84956194
+mem_heap_B=27215878
+mem_heap_extra_B=3882
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=89202241
+mem_heap_B=27303507
+mem_heap_extra_B=4397
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=92188928
+mem_heap_B=27303763
+mem_heap_extra_B=4405
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=95175615
+mem_heap_B=27304019
+mem_heap_extra_B=4413
+mem_stacks_B=0
+heap_tree=detailed
+n3: 27304019 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n6: 25976832 0x81A0D1F: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+  n1: 18350080 0x7BE5F52: i965_create_buffer_internal (i965_drv_video.c:2690)
+   n1: 18350080 0x7BE601D: i965_CreateBuffer (i965_drv_video.c:2745)
+    n1: 18350080 0x4E35D61: vaCreateBuffer (va.c:1142)
+     n1: 18350080 0x50D4C4E: YamiMediaCodec::VaapiBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, VABufferType, unsigned int, void const*, void**) (VaapiBuffer.cpp:43)
+      n1: 18350080 0x51067F5: YamiMediaCodec::VaapiCodedBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, unsigned int) (vaapicodedbuffer.cpp:30)
+       n1: 18350080 0x5114747: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1258)
+        n1: 18350080 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+         n1: 18350080 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+          n0: 18350080 0x401456: main (in /home/snow/751Issue/test)
+  n3: 3670016 0x7C1CE56: intel_batchbuffer_reset (intel_batchbuffer.c:62)
+   n4: 2621440 0x7C1CF79: intel_batchbuffer_new (intel_batchbuffer.c:112)
+    n1: 1048576 0x7C32671: gen9_avc_pak_pipeline (gen9_avc_encoder.c:7336)
+     n1: 1048576 0x7BEDC60: intel_encoder_end_picture (i965_encoder.c:1364)
+      n1: 1048576 0x4E3628D: vaEndPicture (va.c:1316)
+       n1: 1048576 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+        n1: 1048576 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+         n1: 1048576 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+          n1: 1048576 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+           n1: 1048576 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+            n0: 1048576 0x401456: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A14: i965_driver_data_init (i965_drv_video.c:6622)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A2A: i965_driver_data_init (i965_drv_video.c:6623)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BED1C7: intel_enc_hw_context_init (i965_encoder.c:1425)
+     n1: 524288 0x7BE5839: i965_CreateContext (i965_drv_video.c:2485)
+      n1: 524288 0x4E35C20: vaCreateContext (va.c:1097)
+       n1: 524288 0x50D8206: YamiMediaCodec::VaapiContext::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiConfig> const&, int, int, int, unsigned int*, int) (vaapicontext.cpp:129)
+        n1: 524288 0x510B70D: YamiMediaCodec::VaapiEncoderBase::initVA() (vaapiencoder_base.cpp:582)
+         n1: 524288 0x510BEB7: YamiMediaCodec::VaapiEncoderBase::start() (vaapiencoder_base.cpp:97)
+          n0: 524288 0x40135C: main (in /home/snow/751Issue/test)
+   n1: 1048576 0x7C02B9B: i965_image_pl2_processing (i965_post_processing.c:5217)
+    n2: 1048576 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+     n1: 524288 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+      n0: 524288 0x4013ED: main (in /home/snow/751Issue/test)
+     n1: 524288 0x7BED988: intel_encoder_check_yuv_surface.isra.17 (i965_encoder.c:187)
+      n1: 524288 0x7BEDDA8: intel_encoder_end_picture (i965_encoder.c:1293)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 2621440 0x7BE3178: i965_MapBuffer (i965_drv_video.c:2826)
+   n1: 2621440 0x4E35E91: vaMapBuffer (va.c:1180)
+    n0: 2621440 0x40137A: main (in /home/snow/751Issue/test)
+  n0: 507904 in 8 places, all below massif's threshold (1.00%)
+  n1: 499712 0x7BFE29E: gen8_gpe_load_kernels (i965_gpe_utils.c:1243)
+   n0: 499712 in 9 places, all below massif's threshold (1.00%)
+  n1: 327680 0x7C0E41D: gen8_pp_object_walker (gen8_post_processing.c:1448)
+   n1: 327680 0x7BD72BB: gen9_post_processing (gen9_post_processing.c:423)
+    n1: 327680 0x7C02B8B: i965_image_pl2_processing (i965_post_processing.c:4740)
+     n1: 327680 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+      n1: 327680 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+       n0: 327680 0x4013ED: main (in /home/snow/751Issue/test)
+ n0: 1048576 0x4010ED: main (in /home/snow/751Issue/test)
+ n0: 278611 in 137 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=98162789
+mem_heap_B=27304275
+mem_heap_extra_B=4421
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=102877020
+mem_heap_B=27220358
+mem_heap_extra_B=3938
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=105863707
+mem_heap_B=27220614
+mem_heap_extra_B=3946
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=108850394
+mem_heap_B=27220870
+mem_heap_extra_B=3922
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=111837081
+mem_heap_B=27221126
+mem_heap_extra_B=3962
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=116226091
+mem_heap_B=31865291
+mem_heap_extra_B=4581
+mem_stacks_B=0
+heap_tree=peak
+n5: 31865291 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n7: 27090944 0x81A0D1F: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+  n1: 18350080 0x7BE5F52: i965_create_buffer_internal (i965_drv_video.c:2690)
+   n1: 18350080 0x7BE601D: i965_CreateBuffer (i965_drv_video.c:2745)
+    n1: 18350080 0x4E35D61: vaCreateBuffer (va.c:1142)
+     n1: 18350080 0x50D4C4E: YamiMediaCodec::VaapiBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, VABufferType, unsigned int, void const*, void**) (VaapiBuffer.cpp:43)
+      n1: 18350080 0x51067F5: YamiMediaCodec::VaapiCodedBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, unsigned int) (vaapicodedbuffer.cpp:30)
+       n1: 18350080 0x5114747: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1258)
+        n1: 18350080 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+         n1: 18350080 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+          n0: 18350080 0x401456: main (in /home/snow/751Issue/test)
+  n4: 4718592 0x7C1CE56: intel_batchbuffer_reset (intel_batchbuffer.c:62)
+   n4: 3145728 0x7C1CF79: intel_batchbuffer_new (intel_batchbuffer.c:112)
+    n1: 1572864 0x7C32671: gen9_avc_pak_pipeline (gen9_avc_encoder.c:7336)
+     n1: 1572864 0x7BEDC60: intel_encoder_end_picture (i965_encoder.c:1364)
+      n1: 1572864 0x4E3628D: vaEndPicture (va.c:1316)
+       n1: 1572864 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+        n1: 1572864 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+         n1: 1572864 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+          n1: 1572864 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+           n1: 1572864 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+            n0: 1572864 0x401456: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A14: i965_driver_data_init (i965_drv_video.c:6622)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A2A: i965_driver_data_init (i965_drv_video.c:6623)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BED1C7: intel_enc_hw_context_init (i965_encoder.c:1425)
+     n1: 524288 0x7BE5839: i965_CreateContext (i965_drv_video.c:2485)
+      n1: 524288 0x4E35C20: vaCreateContext (va.c:1097)
+       n1: 524288 0x50D8206: YamiMediaCodec::VaapiContext::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiConfig> const&, int, int, int, unsigned int*, int) (vaapicontext.cpp:129)
+        n1: 524288 0x510B70D: YamiMediaCodec::VaapiEncoderBase::initVA() (vaapiencoder_base.cpp:582)
+         n1: 524288 0x510BEB7: YamiMediaCodec::VaapiEncoderBase::start() (vaapiencoder_base.cpp:97)
+          n0: 524288 0x40135C: main (in /home/snow/751Issue/test)
+   n1: 1048576 0x7C02B9B: i965_image_pl2_processing (i965_post_processing.c:5217)
+    n2: 1048576 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+     n1: 524288 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+      n0: 524288 0x4013ED: main (in /home/snow/751Issue/test)
+     n1: 524288 0x7BED988: intel_encoder_check_yuv_surface.isra.17 (i965_encoder.c:187)
+      n1: 524288 0x7BEDDA8: intel_encoder_end_picture (i965_encoder.c:1293)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n1: 524288 0x7C2D31F: gen9_avc_run_kernel_media_object_walker.isra.20 (gen9_avc_encoder.c:1242)
+    n1: 524288 0x7C2DF43: gen9_avc_kernel_mbenc (gen9_avc_encoder.c:4088)
+     n1: 524288 0x7C312B0: gen9_avc_vme_pipeline (gen9_avc_encoder.c:5822)
+      n1: 524288 0x7BEDC47: intel_encoder_end_picture (i965_encoder.c:1359)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 2621440 0x7BE3178: i965_MapBuffer (i965_drv_video.c:2826)
+   n1: 2621440 0x4E35E91: vaMapBuffer (va.c:1180)
+    n0: 2621440 0x40137A: main (in /home/snow/751Issue/test)
+  n1: 499712 0x7BFE29E: gen8_gpe_load_kernels (i965_gpe_utils.c:1243)
+   n0: 499712 in 9 places, all below massif's threshold (1.00%)
+  n1: 327680 0x7C0E41D: gen8_pp_object_walker (gen8_post_processing.c:1448)
+   n1: 327680 0x7BD72BB: gen9_post_processing (gen9_post_processing.c:423)
+    n1: 327680 0x7C02B8B: i965_image_pl2_processing (i965_post_processing.c:4740)
+     n1: 327680 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+      n1: 327680 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+       n0: 327680 0x4013ED: main (in /home/snow/751Issue/test)
+  n1: 327680 0x7C01604: i965_zero_gpe_resource (i965_gpe_utils.c:1461)
+   n0: 327680 in 6 places, all below massif's threshold (1.00%)
+  n0: 245760 in 7 places, all below massif's threshold (1.00%)
+ n1: 2326464 0x81A0358: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+  n2: 2326464 0x81A04DB: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+   n2: 2097088 0x7C1D1AF: intel_batchbuffer_emit_reloc64 (intel_batchbuffer.c:176)
+    n1: 2097088 0x7C32AA7: gen9_avc_pak_pipeline (gen9_avc_encoder.c:6034)
+     n1: 2097088 0x7BEDC60: intel_encoder_end_picture (i965_encoder.c:1364)
+      n1: 2097088 0x4E3628D: vaEndPicture (va.c:1316)
+       n1: 2097088 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+        n1: 2097088 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+         n1: 2097088 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+          n1: 2097088 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+           n1: 2097088 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+            n0: 2097088 0x401456: main (in /home/snow/751Issue/test)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 229376 in 3 places, all below massif's threshold (1.00%)
+ n1: 1163232 0x81A036E: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+  n2: 1163232 0x81A04DB: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+   n2: 1048544 0x7C1D1AF: intel_batchbuffer_emit_reloc64 (intel_batchbuffer.c:176)
+    n1: 1048544 0x7C32AA7: gen9_avc_pak_pipeline (gen9_avc_encoder.c:6034)
+     n1: 1048544 0x7BEDC60: intel_encoder_end_picture (i965_encoder.c:1364)
+      n1: 1048544 0x4E3628D: vaEndPicture (va.c:1316)
+       n1: 1048544 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+        n1: 1048544 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+         n1: 1048544 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+          n1: 1048544 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+           n1: 1048544 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+            n0: 1048544 0x401456: main (in /home/snow/751Issue/test)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n0: 114688 in 3 places, all below massif's threshold (1.00%)
+ n0: 1048576 0x4010ED: main (in /home/snow/751Issue/test)
+ n0: 236075 in 135 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=119070435
+mem_heap_B=28370899
+mem_heap_extra_B=4533
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=122057122
+mem_heap_B=28371155
+mem_heap_extra_B=4525
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=125043809
+mem_heap_B=28371411
+mem_heap_extra_B=4549
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=128030496
+mem_heap_B=28371667
+mem_heap_extra_B=4573
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=131017183
+mem_heap_B=28371923
+mem_heap_extra_B=4597
+mem_stacks_B=0
+heap_tree=detailed
+n3: 28371923 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n6: 27037696 0x81A0D1F: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+  n1: 18350080 0x7BE5F52: i965_create_buffer_internal (i965_drv_video.c:2690)
+   n1: 18350080 0x7BE601D: i965_CreateBuffer (i965_drv_video.c:2745)
+    n1: 18350080 0x4E35D61: vaCreateBuffer (va.c:1142)
+     n1: 18350080 0x50D4C4E: YamiMediaCodec::VaapiBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, VABufferType, unsigned int, void const*, void**) (VaapiBuffer.cpp:43)
+      n1: 18350080 0x51067F5: YamiMediaCodec::VaapiCodedBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, unsigned int) (vaapicodedbuffer.cpp:30)
+       n1: 18350080 0x5114747: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1258)
+        n1: 18350080 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+         n1: 18350080 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+          n0: 18350080 0x401456: main (in /home/snow/751Issue/test)
+  n4: 4718592 0x7C1CE56: intel_batchbuffer_reset (intel_batchbuffer.c:62)
+   n4: 3145728 0x7C1CF79: intel_batchbuffer_new (intel_batchbuffer.c:112)
+    n1: 1572864 0x7C32671: gen9_avc_pak_pipeline (gen9_avc_encoder.c:7336)
+     n1: 1572864 0x7BEDC60: intel_encoder_end_picture (i965_encoder.c:1364)
+      n1: 1572864 0x4E3628D: vaEndPicture (va.c:1316)
+       n1: 1572864 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+        n1: 1572864 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+         n1: 1572864 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+          n1: 1572864 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+           n1: 1572864 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+            n0: 1572864 0x401456: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A14: i965_driver_data_init (i965_drv_video.c:6622)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A2A: i965_driver_data_init (i965_drv_video.c:6623)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BED1C7: intel_enc_hw_context_init (i965_encoder.c:1425)
+     n1: 524288 0x7BE5839: i965_CreateContext (i965_drv_video.c:2485)
+      n1: 524288 0x4E35C20: vaCreateContext (va.c:1097)
+       n1: 524288 0x50D8206: YamiMediaCodec::VaapiContext::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiConfig> const&, int, int, int, unsigned int*, int) (vaapicontext.cpp:129)
+        n1: 524288 0x510B70D: YamiMediaCodec::VaapiEncoderBase::initVA() (vaapiencoder_base.cpp:582)
+         n1: 524288 0x510BEB7: YamiMediaCodec::VaapiEncoderBase::start() (vaapiencoder_base.cpp:97)
+          n0: 524288 0x40135C: main (in /home/snow/751Issue/test)
+   n1: 1048576 0x7C02B9B: i965_image_pl2_processing (i965_post_processing.c:5217)
+    n2: 1048576 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+     n1: 524288 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+      n0: 524288 0x4013ED: main (in /home/snow/751Issue/test)
+     n1: 524288 0x7BED988: intel_encoder_check_yuv_surface.isra.17 (i965_encoder.c:187)
+      n1: 524288 0x7BEDDA8: intel_encoder_end_picture (i965_encoder.c:1293)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n1: 524288 0x7C2D31F: gen9_avc_run_kernel_media_object_walker.isra.20 (gen9_avc_encoder.c:1242)
+    n1: 524288 0x7C2DF43: gen9_avc_kernel_mbenc (gen9_avc_encoder.c:4088)
+     n1: 524288 0x7C312B0: gen9_avc_vme_pipeline (gen9_avc_encoder.c:5822)
+      n1: 524288 0x7BEDC47: intel_encoder_end_picture (i965_encoder.c:1359)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 2621440 0x7BE3178: i965_MapBuffer (i965_drv_video.c:2826)
+   n1: 2621440 0x4E35E91: vaMapBuffer (va.c:1180)
+    n0: 2621440 0x40137A: main (in /home/snow/751Issue/test)
+  n1: 512000 0x7BFE29E: gen8_gpe_load_kernels (i965_gpe_utils.c:1243)
+   n0: 512000 in 9 places, all below massif's threshold (1.00%)
+  n0: 507904 in 8 places, all below massif's threshold (1.00%)
+  n1: 327680 0x7C0E41D: gen8_pp_object_walker (gen8_post_processing.c:1448)
+   n1: 327680 0x7BD72BB: gen9_post_processing (gen9_post_processing.c:423)
+    n1: 327680 0x7C02B8B: i965_image_pl2_processing (i965_post_processing.c:4740)
+     n1: 327680 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+      n1: 327680 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+       n0: 327680 0x4013ED: main (in /home/snow/751Issue/test)
+ n0: 1048576 0x4010ED: main (in /home/snow/751Issue/test)
+ n0: 285651 in 137 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=134003870
+mem_heap_B=28372179
+mem_heap_extra_B=4589
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=136990557
+mem_heap_B=28372435
+mem_heap_extra_B=4597
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=139977244
+mem_heap_B=28372691
+mem_heap_extra_B=4653
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=142963931
+mem_heap_B=28372947
+mem_heap_extra_B=4629
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=145950618
+mem_heap_B=28373203
+mem_heap_extra_B=4621
+mem_stacks_B=0
+heap_tree=detailed
+n3: 28373203 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n6: 27037696 0x81A0D1F: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+  n1: 18350080 0x7BE5F52: i965_create_buffer_internal (i965_drv_video.c:2690)
+   n1: 18350080 0x7BE601D: i965_CreateBuffer (i965_drv_video.c:2745)
+    n1: 18350080 0x4E35D61: vaCreateBuffer (va.c:1142)
+     n1: 18350080 0x50D4C4E: YamiMediaCodec::VaapiBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, VABufferType, unsigned int, void const*, void**) (VaapiBuffer.cpp:43)
+      n1: 18350080 0x51067F5: YamiMediaCodec::VaapiCodedBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, unsigned int) (vaapicodedbuffer.cpp:30)
+       n1: 18350080 0x5114747: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1258)
+        n1: 18350080 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+         n1: 18350080 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+          n0: 18350080 0x401456: main (in /home/snow/751Issue/test)
+  n4: 4718592 0x7C1CE56: intel_batchbuffer_reset (intel_batchbuffer.c:62)
+   n4: 3145728 0x7C1CF79: intel_batchbuffer_new (intel_batchbuffer.c:112)
+    n1: 1572864 0x7C32671: gen9_avc_pak_pipeline (gen9_avc_encoder.c:7336)
+     n1: 1572864 0x7BEDC60: intel_encoder_end_picture (i965_encoder.c:1364)
+      n1: 1572864 0x4E3628D: vaEndPicture (va.c:1316)
+       n1: 1572864 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+        n1: 1572864 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+         n1: 1572864 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+          n1: 1572864 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+           n1: 1572864 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+            n0: 1572864 0x401456: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A14: i965_driver_data_init (i965_drv_video.c:6622)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A2A: i965_driver_data_init (i965_drv_video.c:6623)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BED1C7: intel_enc_hw_context_init (i965_encoder.c:1425)
+     n1: 524288 0x7BE5839: i965_CreateContext (i965_drv_video.c:2485)
+      n1: 524288 0x4E35C20: vaCreateContext (va.c:1097)
+       n1: 524288 0x50D8206: YamiMediaCodec::VaapiContext::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiConfig> const&, int, int, int, unsigned int*, int) (vaapicontext.cpp:129)
+        n1: 524288 0x510B70D: YamiMediaCodec::VaapiEncoderBase::initVA() (vaapiencoder_base.cpp:582)
+         n1: 524288 0x510BEB7: YamiMediaCodec::VaapiEncoderBase::start() (vaapiencoder_base.cpp:97)
+          n0: 524288 0x40135C: main (in /home/snow/751Issue/test)
+   n1: 1048576 0x7C02B9B: i965_image_pl2_processing (i965_post_processing.c:5217)
+    n2: 1048576 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+     n1: 524288 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+      n0: 524288 0x4013ED: main (in /home/snow/751Issue/test)
+     n1: 524288 0x7BED988: intel_encoder_check_yuv_surface.isra.17 (i965_encoder.c:187)
+      n1: 524288 0x7BEDDA8: intel_encoder_end_picture (i965_encoder.c:1293)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n1: 524288 0x7C2D31F: gen9_avc_run_kernel_media_object_walker.isra.20 (gen9_avc_encoder.c:1242)
+    n1: 524288 0x7C2DF43: gen9_avc_kernel_mbenc (gen9_avc_encoder.c:4088)
+     n1: 524288 0x7C312B0: gen9_avc_vme_pipeline (gen9_avc_encoder.c:5822)
+      n1: 524288 0x7BEDC47: intel_encoder_end_picture (i965_encoder.c:1359)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 2621440 0x7BE3178: i965_MapBuffer (i965_drv_video.c:2826)
+   n1: 2621440 0x4E35E91: vaMapBuffer (va.c:1180)
+    n0: 2621440 0x40137A: main (in /home/snow/751Issue/test)
+  n1: 512000 0x7BFE29E: gen8_gpe_load_kernels (i965_gpe_utils.c:1243)
+   n0: 512000 in 9 places, all below massif's threshold (1.00%)
+  n0: 507904 in 8 places, all below massif's threshold (1.00%)
+  n1: 327680 0x7C0E41D: gen8_pp_object_walker (gen8_post_processing.c:1448)
+   n1: 327680 0x7BD72BB: gen9_post_processing (gen9_post_processing.c:423)
+    n1: 327680 0x7C02B8B: i965_image_pl2_processing (i965_post_processing.c:4740)
+     n1: 327680 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+      n1: 327680 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+       n0: 327680 0x4013ED: main (in /home/snow/751Issue/test)
+ n0: 1048576 0x4010ED: main (in /home/snow/751Issue/test)
+ n0: 286931 in 137 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=150664805
+mem_heap_B=28289286
+mem_heap_extra_B=4138
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=153651492
+mem_heap_B=28289542
+mem_heap_extra_B=4130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=156638179
+mem_heap_B=28289798
+mem_heap_extra_B=4186
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=159624866
+mem_heap_B=28290054
+mem_heap_extra_B=4162
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=162611553
+mem_heap_B=28290310
+mem_heap_extra_B=4154
+mem_stacks_B=0
+heap_tree=detailed
+n3: 28290310 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n6: 26972160 0x81A0D1F: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+  n1: 18350080 0x7BE5F52: i965_create_buffer_internal (i965_drv_video.c:2690)
+   n1: 18350080 0x7BE601D: i965_CreateBuffer (i965_drv_video.c:2745)
+    n1: 18350080 0x4E35D61: vaCreateBuffer (va.c:1142)
+     n1: 18350080 0x50D4C4E: YamiMediaCodec::VaapiBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, VABufferType, unsigned int, void const*, void**) (VaapiBuffer.cpp:43)
+      n1: 18350080 0x51067F5: YamiMediaCodec::VaapiCodedBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, unsigned int) (vaapicodedbuffer.cpp:30)
+       n1: 18350080 0x5114747: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1258)
+        n1: 18350080 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+         n1: 18350080 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+          n0: 18350080 0x401456: main (in /home/snow/751Issue/test)
+  n4: 4718592 0x7C1CE56: intel_batchbuffer_reset (intel_batchbuffer.c:62)
+   n4: 3145728 0x7C1CF79: intel_batchbuffer_new (intel_batchbuffer.c:112)
+    n1: 1572864 0x7C32671: gen9_avc_pak_pipeline (gen9_avc_encoder.c:7336)
+     n1: 1572864 0x7BEDC60: intel_encoder_end_picture (i965_encoder.c:1364)
+      n1: 1572864 0x4E3628D: vaEndPicture (va.c:1316)
+       n1: 1572864 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+        n1: 1572864 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+         n1: 1572864 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+          n1: 1572864 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+           n1: 1572864 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+            n0: 1572864 0x401456: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A14: i965_driver_data_init (i965_drv_video.c:6622)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A2A: i965_driver_data_init (i965_drv_video.c:6623)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BED1C7: intel_enc_hw_context_init (i965_encoder.c:1425)
+     n1: 524288 0x7BE5839: i965_CreateContext (i965_drv_video.c:2485)
+      n1: 524288 0x4E35C20: vaCreateContext (va.c:1097)
+       n1: 524288 0x50D8206: YamiMediaCodec::VaapiContext::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiConfig> const&, int, int, int, unsigned int*, int) (vaapicontext.cpp:129)
+        n1: 524288 0x510B70D: YamiMediaCodec::VaapiEncoderBase::initVA() (vaapiencoder_base.cpp:582)
+         n1: 524288 0x510BEB7: YamiMediaCodec::VaapiEncoderBase::start() (vaapiencoder_base.cpp:97)
+          n0: 524288 0x40135C: main (in /home/snow/751Issue/test)
+   n1: 1048576 0x7C02B9B: i965_image_pl2_processing (i965_post_processing.c:5217)
+    n2: 1048576 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+     n1: 524288 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+      n0: 524288 0x4013ED: main (in /home/snow/751Issue/test)
+     n1: 524288 0x7BED988: intel_encoder_check_yuv_surface.isra.17 (i965_encoder.c:187)
+      n1: 524288 0x7BEDDA8: intel_encoder_end_picture (i965_encoder.c:1293)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n1: 524288 0x7C2D31F: gen9_avc_run_kernel_media_object_walker.isra.20 (gen9_avc_encoder.c:1242)
+    n1: 524288 0x7C2DF43: gen9_avc_kernel_mbenc (gen9_avc_encoder.c:4088)
+     n1: 524288 0x7C312B0: gen9_avc_vme_pipeline (gen9_avc_encoder.c:5822)
+      n1: 524288 0x7BEDC47: intel_encoder_end_picture (i965_encoder.c:1359)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 2621440 0x7BE3178: i965_MapBuffer (i965_drv_video.c:2826)
+   n1: 2621440 0x4E35E91: vaMapBuffer (va.c:1180)
+    n0: 2621440 0x40137A: main (in /home/snow/751Issue/test)
+  n1: 512000 0x7BFE29E: gen8_gpe_load_kernels (i965_gpe_utils.c:1243)
+   n0: 512000 in 9 places, all below massif's threshold (1.00%)
+  n0: 442368 in 8 places, all below massif's threshold (1.00%)
+  n1: 327680 0x7C0E41D: gen8_pp_object_walker (gen8_post_processing.c:1448)
+   n1: 327680 0x7BD72BB: gen9_post_processing (gen9_post_processing.c:423)
+    n1: 327680 0x7C02B8B: i965_image_pl2_processing (i965_post_processing.c:4740)
+     n1: 327680 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+      n1: 327680 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+       n0: 327680 0x4013ED: main (in /home/snow/751Issue/test)
+ n0: 1048576 0x4010ED: main (in /home/snow/751Issue/test)
+ n0: 269574 in 137 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=51
+#-----------
+time=165598240
+mem_heap_B=28290566
+mem_heap_extra_B=4210
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=168584927
+mem_heap_B=28290822
+mem_heap_extra_B=4186
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=171571614
+mem_heap_B=28291078
+mem_heap_extra_B=4226
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=174558301
+mem_heap_B=28291334
+mem_heap_extra_B=4234
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=177544988
+mem_heap_B=28291590
+mem_heap_extra_B=4242
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=180531675
+mem_heap_B=28291846
+mem_heap_extra_B=4250
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=183518362
+mem_heap_B=28292102
+mem_heap_extra_B=4258
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=186505533
+mem_heap_B=28292358
+mem_heap_extra_B=4266
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=189492220
+mem_heap_B=28292614
+mem_heap_extra_B=4274
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=192478907
+mem_heap_B=28292870
+mem_heap_extra_B=4282
+mem_stacks_B=0
+heap_tree=detailed
+n3: 28292870 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n6: 26972160 0x81A0D1F: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+  n1: 18350080 0x7BE5F52: i965_create_buffer_internal (i965_drv_video.c:2690)
+   n1: 18350080 0x7BE601D: i965_CreateBuffer (i965_drv_video.c:2745)
+    n1: 18350080 0x4E35D61: vaCreateBuffer (va.c:1142)
+     n1: 18350080 0x50D4C4E: YamiMediaCodec::VaapiBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, VABufferType, unsigned int, void const*, void**) (VaapiBuffer.cpp:43)
+      n1: 18350080 0x51067F5: YamiMediaCodec::VaapiCodedBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, unsigned int) (vaapicodedbuffer.cpp:30)
+       n1: 18350080 0x5114747: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1258)
+        n1: 18350080 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+         n1: 18350080 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+          n0: 18350080 0x401456: main (in /home/snow/751Issue/test)
+  n4: 4718592 0x7C1CE56: intel_batchbuffer_reset (intel_batchbuffer.c:62)
+   n4: 3145728 0x7C1CF79: intel_batchbuffer_new (intel_batchbuffer.c:112)
+    n1: 1572864 0x7C32671: gen9_avc_pak_pipeline (gen9_avc_encoder.c:7336)
+     n1: 1572864 0x7BEDC60: intel_encoder_end_picture (i965_encoder.c:1364)
+      n1: 1572864 0x4E3628D: vaEndPicture (va.c:1316)
+       n1: 1572864 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+        n1: 1572864 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+         n1: 1572864 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+          n1: 1572864 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+           n1: 1572864 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+            n0: 1572864 0x401456: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A14: i965_driver_data_init (i965_drv_video.c:6622)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A2A: i965_driver_data_init (i965_drv_video.c:6623)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BED1C7: intel_enc_hw_context_init (i965_encoder.c:1425)
+     n1: 524288 0x7BE5839: i965_CreateContext (i965_drv_video.c:2485)
+      n1: 524288 0x4E35C20: vaCreateContext (va.c:1097)
+       n1: 524288 0x50D8206: YamiMediaCodec::VaapiContext::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiConfig> const&, int, int, int, unsigned int*, int) (vaapicontext.cpp:129)
+        n1: 524288 0x510B70D: YamiMediaCodec::VaapiEncoderBase::initVA() (vaapiencoder_base.cpp:582)
+         n1: 524288 0x510BEB7: YamiMediaCodec::VaapiEncoderBase::start() (vaapiencoder_base.cpp:97)
+          n0: 524288 0x40135C: main (in /home/snow/751Issue/test)
+   n1: 1048576 0x7C02B9B: i965_image_pl2_processing (i965_post_processing.c:5217)
+    n2: 1048576 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+     n1: 524288 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+      n0: 524288 0x4013ED: main (in /home/snow/751Issue/test)
+     n1: 524288 0x7BED988: intel_encoder_check_yuv_surface.isra.17 (i965_encoder.c:187)
+      n1: 524288 0x7BEDDA8: intel_encoder_end_picture (i965_encoder.c:1293)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n1: 524288 0x7C2D31F: gen9_avc_run_kernel_media_object_walker.isra.20 (gen9_avc_encoder.c:1242)
+    n1: 524288 0x7C2DF43: gen9_avc_kernel_mbenc (gen9_avc_encoder.c:4088)
+     n1: 524288 0x7C312B0: gen9_avc_vme_pipeline (gen9_avc_encoder.c:5822)
+      n1: 524288 0x7BEDC47: intel_encoder_end_picture (i965_encoder.c:1359)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 2621440 0x7BE3178: i965_MapBuffer (i965_drv_video.c:2826)
+   n1: 2621440 0x4E35E91: vaMapBuffer (va.c:1180)
+    n0: 2621440 0x40137A: main (in /home/snow/751Issue/test)
+  n1: 512000 0x7BFE29E: gen8_gpe_load_kernels (i965_gpe_utils.c:1243)
+   n0: 512000 in 9 places, all below massif's threshold (1.00%)
+  n0: 442368 in 8 places, all below massif's threshold (1.00%)
+  n1: 327680 0x7C0E41D: gen8_pp_object_walker (gen8_post_processing.c:1448)
+   n1: 327680 0x7BD72BB: gen9_post_processing (gen9_post_processing.c:423)
+    n1: 327680 0x7C02B8B: i965_image_pl2_processing (i965_post_processing.c:4740)
+     n1: 327680 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+      n1: 327680 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+       n0: 327680 0x4013ED: main (in /home/snow/751Issue/test)
+ n0: 1048576 0x4010ED: main (in /home/snow/751Issue/test)
+ n0: 272134 in 137 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=61
+#-----------
+time=195465594
+mem_heap_B=28293126
+mem_heap_extra_B=4290
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=198452498
+mem_heap_B=28296326
+mem_heap_extra_B=4306
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=201439185
+mem_heap_B=28296582
+mem_heap_extra_B=4314
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=204425872
+mem_heap_B=28296838
+mem_heap_extra_B=4322
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=207412559
+mem_heap_B=28297094
+mem_heap_extra_B=4330
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=210399246
+mem_heap_B=28297350
+mem_heap_extra_B=4354
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=213385933
+mem_heap_B=28297606
+mem_heap_extra_B=4362
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=216372620
+mem_heap_B=28297862
+mem_heap_extra_B=4370
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=219359307
+mem_heap_B=28298118
+mem_heap_extra_B=4362
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=222345994
+mem_heap_B=28298374
+mem_heap_extra_B=4370
+mem_stacks_B=0
+heap_tree=detailed
+n3: 28298374 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n6: 26972160 0x81A0D1F: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+  n1: 18350080 0x7BE5F52: i965_create_buffer_internal (i965_drv_video.c:2690)
+   n1: 18350080 0x7BE601D: i965_CreateBuffer (i965_drv_video.c:2745)
+    n1: 18350080 0x4E35D61: vaCreateBuffer (va.c:1142)
+     n1: 18350080 0x50D4C4E: YamiMediaCodec::VaapiBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, VABufferType, unsigned int, void const*, void**) (VaapiBuffer.cpp:43)
+      n1: 18350080 0x51067F5: YamiMediaCodec::VaapiCodedBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, unsigned int) (vaapicodedbuffer.cpp:30)
+       n1: 18350080 0x5114747: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1258)
+        n1: 18350080 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+         n1: 18350080 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+          n0: 18350080 0x401456: main (in /home/snow/751Issue/test)
+  n4: 4718592 0x7C1CE56: intel_batchbuffer_reset (intel_batchbuffer.c:62)
+   n4: 3145728 0x7C1CF79: intel_batchbuffer_new (intel_batchbuffer.c:112)
+    n1: 1572864 0x7C32671: gen9_avc_pak_pipeline (gen9_avc_encoder.c:7336)
+     n1: 1572864 0x7BEDC60: intel_encoder_end_picture (i965_encoder.c:1364)
+      n1: 1572864 0x4E3628D: vaEndPicture (va.c:1316)
+       n1: 1572864 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+        n1: 1572864 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+         n1: 1572864 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+          n1: 1572864 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+           n1: 1572864 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+            n0: 1572864 0x401456: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A14: i965_driver_data_init (i965_drv_video.c:6622)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A2A: i965_driver_data_init (i965_drv_video.c:6623)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BED1C7: intel_enc_hw_context_init (i965_encoder.c:1425)
+     n1: 524288 0x7BE5839: i965_CreateContext (i965_drv_video.c:2485)
+      n1: 524288 0x4E35C20: vaCreateContext (va.c:1097)
+       n1: 524288 0x50D8206: YamiMediaCodec::VaapiContext::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiConfig> const&, int, int, int, unsigned int*, int) (vaapicontext.cpp:129)
+        n1: 524288 0x510B70D: YamiMediaCodec::VaapiEncoderBase::initVA() (vaapiencoder_base.cpp:582)
+         n1: 524288 0x510BEB7: YamiMediaCodec::VaapiEncoderBase::start() (vaapiencoder_base.cpp:97)
+          n0: 524288 0x40135C: main (in /home/snow/751Issue/test)
+   n1: 1048576 0x7C02B9B: i965_image_pl2_processing (i965_post_processing.c:5217)
+    n2: 1048576 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+     n1: 524288 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+      n0: 524288 0x4013ED: main (in /home/snow/751Issue/test)
+     n1: 524288 0x7BED988: intel_encoder_check_yuv_surface.isra.17 (i965_encoder.c:187)
+      n1: 524288 0x7BEDDA8: intel_encoder_end_picture (i965_encoder.c:1293)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n1: 524288 0x7C2D31F: gen9_avc_run_kernel_media_object_walker.isra.20 (gen9_avc_encoder.c:1242)
+    n1: 524288 0x7C2DF43: gen9_avc_kernel_mbenc (gen9_avc_encoder.c:4088)
+     n1: 524288 0x7C312B0: gen9_avc_vme_pipeline (gen9_avc_encoder.c:5822)
+      n1: 524288 0x7BEDC47: intel_encoder_end_picture (i965_encoder.c:1359)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 2621440 0x7BE3178: i965_MapBuffer (i965_drv_video.c:2826)
+   n1: 2621440 0x4E35E91: vaMapBuffer (va.c:1180)
+    n0: 2621440 0x40137A: main (in /home/snow/751Issue/test)
+  n1: 512000 0x7BFE29E: gen8_gpe_load_kernels (i965_gpe_utils.c:1243)
+   n0: 512000 in 9 places, all below massif's threshold (1.00%)
+  n0: 442368 in 8 places, all below massif's threshold (1.00%)
+  n1: 327680 0x7C0E41D: gen8_pp_object_walker (gen8_post_processing.c:1448)
+   n1: 327680 0x7BD72BB: gen9_post_processing (gen9_post_processing.c:423)
+    n1: 327680 0x7C02B8B: i965_image_pl2_processing (i965_post_processing.c:4740)
+     n1: 327680 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+      n1: 327680 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+       n0: 327680 0x4013ED: main (in /home/snow/751Issue/test)
+ n0: 1048576 0x4010ED: main (in /home/snow/751Issue/test)
+ n0: 277638 in 137 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=71
+#-----------
+time=225332681
+mem_heap_B=28298630
+mem_heap_extra_B=4410
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=228319368
+mem_heap_B=28298886
+mem_heap_extra_B=4418
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=231306055
+mem_heap_B=28299142
+mem_heap_extra_B=4426
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=234292742
+mem_heap_B=28299398
+mem_heap_extra_B=4434
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=237279429
+mem_heap_B=28299654
+mem_heap_extra_B=4442
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=240266116
+mem_heap_B=28299910
+mem_heap_extra_B=4450
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=243252803
+mem_heap_B=28300166
+mem_heap_extra_B=4458
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=246239707
+mem_heap_B=28303366
+mem_heap_extra_B=4474
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=249226394
+mem_heap_B=28303622
+mem_heap_extra_B=4482
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=252213081
+mem_heap_B=28303878
+mem_heap_extra_B=4474
+mem_stacks_B=0
+heap_tree=detailed
+n3: 28303878 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n6: 26972160 0x81A0D1F: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+  n1: 18350080 0x7BE5F52: i965_create_buffer_internal (i965_drv_video.c:2690)
+   n1: 18350080 0x7BE601D: i965_CreateBuffer (i965_drv_video.c:2745)
+    n1: 18350080 0x4E35D61: vaCreateBuffer (va.c:1142)
+     n1: 18350080 0x50D4C4E: YamiMediaCodec::VaapiBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, VABufferType, unsigned int, void const*, void**) (VaapiBuffer.cpp:43)
+      n1: 18350080 0x51067F5: YamiMediaCodec::VaapiCodedBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, unsigned int) (vaapicodedbuffer.cpp:30)
+       n1: 18350080 0x5114747: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1258)
+        n1: 18350080 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+         n1: 18350080 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+          n0: 18350080 0x401456: main (in /home/snow/751Issue/test)
+  n4: 4718592 0x7C1CE56: intel_batchbuffer_reset (intel_batchbuffer.c:62)
+   n4: 3145728 0x7C1CF79: intel_batchbuffer_new (intel_batchbuffer.c:112)
+    n1: 1572864 0x7C32671: gen9_avc_pak_pipeline (gen9_avc_encoder.c:7336)
+     n1: 1572864 0x7BEDC60: intel_encoder_end_picture (i965_encoder.c:1364)
+      n1: 1572864 0x4E3628D: vaEndPicture (va.c:1316)
+       n1: 1572864 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+        n1: 1572864 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+         n1: 1572864 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+          n1: 1572864 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+           n1: 1572864 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+            n0: 1572864 0x401456: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A14: i965_driver_data_init (i965_drv_video.c:6622)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A2A: i965_driver_data_init (i965_drv_video.c:6623)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BED1C7: intel_enc_hw_context_init (i965_encoder.c:1425)
+     n1: 524288 0x7BE5839: i965_CreateContext (i965_drv_video.c:2485)
+      n1: 524288 0x4E35C20: vaCreateContext (va.c:1097)
+       n1: 524288 0x50D8206: YamiMediaCodec::VaapiContext::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiConfig> const&, int, int, int, unsigned int*, int) (vaapicontext.cpp:129)
+        n1: 524288 0x510B70D: YamiMediaCodec::VaapiEncoderBase::initVA() (vaapiencoder_base.cpp:582)
+         n1: 524288 0x510BEB7: YamiMediaCodec::VaapiEncoderBase::start() (vaapiencoder_base.cpp:97)
+          n0: 524288 0x40135C: main (in /home/snow/751Issue/test)
+   n1: 1048576 0x7C02B9B: i965_image_pl2_processing (i965_post_processing.c:5217)
+    n2: 1048576 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+     n1: 524288 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+      n0: 524288 0x4013ED: main (in /home/snow/751Issue/test)
+     n1: 524288 0x7BED988: intel_encoder_check_yuv_surface.isra.17 (i965_encoder.c:187)
+      n1: 524288 0x7BEDDA8: intel_encoder_end_picture (i965_encoder.c:1293)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n1: 524288 0x7C2D31F: gen9_avc_run_kernel_media_object_walker.isra.20 (gen9_avc_encoder.c:1242)
+    n1: 524288 0x7C2DF43: gen9_avc_kernel_mbenc (gen9_avc_encoder.c:4088)
+     n1: 524288 0x7C312B0: gen9_avc_vme_pipeline (gen9_avc_encoder.c:5822)
+      n1: 524288 0x7BEDC47: intel_encoder_end_picture (i965_encoder.c:1359)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 2621440 0x7BE3178: i965_MapBuffer (i965_drv_video.c:2826)
+   n1: 2621440 0x4E35E91: vaMapBuffer (va.c:1180)
+    n0: 2621440 0x40137A: main (in /home/snow/751Issue/test)
+  n1: 512000 0x7BFE29E: gen8_gpe_load_kernels (i965_gpe_utils.c:1243)
+   n0: 512000 in 9 places, all below massif's threshold (1.00%)
+  n0: 442368 in 8 places, all below massif's threshold (1.00%)
+  n1: 327680 0x7C0E41D: gen8_pp_object_walker (gen8_post_processing.c:1448)
+   n1: 327680 0x7BD72BB: gen9_post_processing (gen9_post_processing.c:423)
+    n1: 327680 0x7C02B8B: i965_image_pl2_processing (i965_post_processing.c:4740)
+     n1: 327680 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+      n1: 327680 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+       n0: 327680 0x4013ED: main (in /home/snow/751Issue/test)
+ n0: 1048576 0x4010ED: main (in /home/snow/751Issue/test)
+ n0: 283142 in 137 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=81
+#-----------
+time=255199768
+mem_heap_B=28304134
+mem_heap_extra_B=4482
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=258186455
+mem_heap_B=28304390
+mem_heap_extra_B=4474
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=261173142
+mem_heap_B=28304646
+mem_heap_extra_B=4482
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=264159829
+mem_heap_B=28304902
+mem_heap_extra_B=4490
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=267146516
+mem_heap_B=28305158
+mem_heap_extra_B=4498
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=270133203
+mem_heap_B=28305414
+mem_heap_extra_B=4506
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=273119890
+mem_heap_B=28305670
+mem_heap_extra_B=4514
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=88
+#-----------
+time=276106577
+mem_heap_B=28305926
+mem_heap_extra_B=4522
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=89
+#-----------
+time=279093751
+mem_heap_B=28306182
+mem_heap_extra_B=4530
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=90
+#-----------
+time=282080438
+mem_heap_B=28306438
+mem_heap_extra_B=4538
+mem_stacks_B=0
+heap_tree=detailed
+n3: 28306438 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n6: 26972160 0x81A0D1F: ??? (in /usr/lib/x86_64-linux-gnu/libdrm_intel.so.1.0.0)
+  n1: 18350080 0x7BE5F52: i965_create_buffer_internal (i965_drv_video.c:2690)
+   n1: 18350080 0x7BE601D: i965_CreateBuffer (i965_drv_video.c:2745)
+    n1: 18350080 0x4E35D61: vaCreateBuffer (va.c:1142)
+     n1: 18350080 0x50D4C4E: YamiMediaCodec::VaapiBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, VABufferType, unsigned int, void const*, void**) (VaapiBuffer.cpp:43)
+      n1: 18350080 0x51067F5: YamiMediaCodec::VaapiCodedBuffer::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiContext> const&, unsigned int) (vaapicodedbuffer.cpp:30)
+       n1: 18350080 0x5114747: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1258)
+        n1: 18350080 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+         n1: 18350080 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+          n0: 18350080 0x401456: main (in /home/snow/751Issue/test)
+  n4: 4718592 0x7C1CE56: intel_batchbuffer_reset (intel_batchbuffer.c:62)
+   n4: 3145728 0x7C1CF79: intel_batchbuffer_new (intel_batchbuffer.c:112)
+    n1: 1572864 0x7C32671: gen9_avc_pak_pipeline (gen9_avc_encoder.c:7336)
+     n1: 1572864 0x7BEDC60: intel_encoder_end_picture (i965_encoder.c:1364)
+      n1: 1572864 0x4E3628D: vaEndPicture (va.c:1316)
+       n1: 1572864 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+        n1: 1572864 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+         n1: 1572864 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+          n1: 1572864 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+           n1: 1572864 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+            n0: 1572864 0x401456: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A14: i965_driver_data_init (i965_drv_video.c:6622)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BE3A2A: i965_driver_data_init (i965_drv_video.c:6623)
+     n1: 524288 0x7BEC18B: __vaDriverInit_0_40 (i965_drv_video.c:6894)
+      n1: 524288 0x4E343D4: va_openDriver (va.c:383)
+       n1: 524288 0x4E351FC: vaInitialize (va.c:647)
+        n0: 524288 0x40116B: main (in /home/snow/751Issue/test)
+    n1: 524288 0x7BED1C7: intel_enc_hw_context_init (i965_encoder.c:1425)
+     n1: 524288 0x7BE5839: i965_CreateContext (i965_drv_video.c:2485)
+      n1: 524288 0x4E35C20: vaCreateContext (va.c:1097)
+       n1: 524288 0x50D8206: YamiMediaCodec::VaapiContext::create(std::tr1::shared_ptr<YamiMediaCodec::VaapiConfig> const&, int, int, int, unsigned int*, int) (vaapicontext.cpp:129)
+        n1: 524288 0x510B70D: YamiMediaCodec::VaapiEncoderBase::initVA() (vaapiencoder_base.cpp:582)
+         n1: 524288 0x510BEB7: YamiMediaCodec::VaapiEncoderBase::start() (vaapiencoder_base.cpp:97)
+          n0: 524288 0x40135C: main (in /home/snow/751Issue/test)
+   n1: 1048576 0x7C02B9B: i965_image_pl2_processing (i965_post_processing.c:5217)
+    n2: 1048576 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+     n1: 524288 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+      n0: 524288 0x4013ED: main (in /home/snow/751Issue/test)
+     n1: 524288 0x7BED988: intel_encoder_check_yuv_surface.isra.17 (i965_encoder.c:187)
+      n1: 524288 0x7BEDDA8: intel_encoder_end_picture (i965_encoder.c:1293)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n1: 524288 0x7C2D31F: gen9_avc_run_kernel_media_object_walker.isra.20 (gen9_avc_encoder.c:1242)
+    n1: 524288 0x7C2DF43: gen9_avc_kernel_mbenc (gen9_avc_encoder.c:4088)
+     n1: 524288 0x7C312B0: gen9_avc_vme_pipeline (gen9_avc_encoder.c:5822)
+      n1: 524288 0x7BEDC47: intel_encoder_end_picture (i965_encoder.c:1359)
+       n1: 524288 0x4E3628D: vaEndPicture (va.c:1316)
+        n1: 524288 0x50D2B3D: YamiMediaCodec::VaapiPicture::render() (vaapipicture.cpp:60)
+         n1: 524288 0x5114456: YamiMediaCodec::VaapiEncoderH264::encodePicture(std::tr1::shared_ptr<YamiMediaCodec::VaapiEncPictureH264> const&) (vaapiencoder_h264.cpp:2014)
+          n1: 524288 0x511468E: YamiMediaCodec::VaapiEncoderH264::encodeAllFrames() (vaapiencoder_h264.cpp:1268)
+           n1: 524288 0x510AA34: YamiMediaCodec::VaapiEncoderBase::encode(std::tr1::shared_ptr<VideoFrame> const&) (vaapiencoder_base.cpp:169)
+            n1: 524288 0x5132C99: encodeEncode (VideoEncoderCapi.cpp:63)
+             n0: 524288 0x401456: main (in /home/snow/751Issue/test)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 2621440 0x7BE3178: i965_MapBuffer (i965_drv_video.c:2826)
+   n1: 2621440 0x4E35E91: vaMapBuffer (va.c:1180)
+    n0: 2621440 0x40137A: main (in /home/snow/751Issue/test)
+  n1: 512000 0x7BFE29E: gen8_gpe_load_kernels (i965_gpe_utils.c:1243)
+   n0: 512000 in 9 places, all below massif's threshold (1.00%)
+  n0: 442368 in 8 places, all below massif's threshold (1.00%)
+  n1: 327680 0x7C0E41D: gen8_pp_object_walker (gen8_post_processing.c:1448)
+   n1: 327680 0x7BD72BB: gen9_post_processing (gen9_post_processing.c:423)
+    n1: 327680 0x7C02B8B: i965_image_pl2_processing (i965_post_processing.c:4740)
+     n1: 327680 0x7C0A3CF: i965_image_processing (i965_post_processing.c:5489)
+      n1: 327680 0x7BEBB84: i965_PutImage (i965_drv_video.c:5279)
+       n0: 327680 0x4013ED: main (in /home/snow/751Issue/test)
+ n0: 1048576 0x4010ED: main (in /home/snow/751Issue/test)
+ n0: 285702 in 137 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=91
+#-----------
+time=285067125
+mem_heap_B=28306694
+mem_heap_extra_B=4546
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=92
+#-----------
+time=288053812
+mem_heap_B=28306950
+mem_heap_extra_B=4554
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=93
+#-----------
+time=291040499
+mem_heap_B=28307206
+mem_heap_extra_B=4562
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=94
+#-----------
+time=294027403
+mem_heap_B=28310406
+mem_heap_extra_B=4578
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=95
+#-----------
+time=297014090
+mem_heap_B=28310662
+mem_heap_extra_B=4586
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=96
+#-----------
+time=300000777
+mem_heap_B=28310918
+mem_heap_extra_B=4626
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=97
+#-----------
+time=302987464
+mem_heap_B=28311174
+mem_heap_extra_B=4618
+mem_stacks_B=0
+heap_tree=empty

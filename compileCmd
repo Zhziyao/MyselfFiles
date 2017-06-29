@@ -1,0 +1,38 @@
+Gitest cmd
+git clean -dxf && ./autogen.sh --prefix=$LIBYAMI_PREFIX --enable-h264enc --enable-jpegenc --enable-vp8enc --enable-vp9enc --enable-h265enc --enable-mpeg2dec --enable-vp8dec --enable-vp9dec --enable-jpegdec --enable-h264dec --enable-h265dec --enable-vc1dec --enable-v4l2 --enable-v4l2-ops --enable-dmabuf --enable-gtest=/home/zyzh/googletest-release-1.7.0 && make -j8 && make installLibyami compile Cmd
+./autogen.sh --prefix=$LIBYAMI_PREFIX --enable-vp9dec --enable-vp8enc --enable-jpegenc --enable-h265enc --enable-h265dec --enable-vc1dec --enable-mpeg2dec  && make -j8 && make installCompile cmd:
+
+#!/bin/bash
+echo 'libyami gtest'
+echo 'git clean -dxf && ./autogen.sh --prefix=$LIBYAMI_PREFIX --enable-h264enc --enable-jpegenc --enable-vp8enc --enable-vp9enc --enable-h265enc --enable-mpeg2dec --enable-vp8dec --enable-vp9dec --enable-jpegdec --enable-h264dec --enable-h265dec --enable-vc1dec --enable-v4l2 --enable-v4l2-ops --enable-dmabuf --enable-gtest=/home/dpwu/source_code/googletest-release-1.7.0 && make -j8 && make install'echo ''
+echo 'libyami:'
+echo 'git clean -dxf && ./autogen.sh --prefix=$LIBYAMI_PREFIX --enable-h264enc --enable-jpegenc --enable-vp8enc --enable-vp9enc --enable-h265enc --enable-mpeg2dec --enable-vp8dec --enable-vp9dec --enable-jpegdec --enable-h264dec --enable-h265dec --enable-vc1dec --enable-v4l2 --enable-v4l2-ops --enable-dmabuf --enable-debug && make -j8 && make install'echo ''
+echo 'libyami utils:'
+echo 'git clean -dxf && ./autogen.sh --prefix=$LIBYAMI_PREFIX --enable-dmabuf --enable-v4l2 --enable-v4l2-glx --enable-v4l2-ops --enable-x11 --enable-wayland --enable-avformat --enable-md5 --enable-tests-gles --enable-dmabuf --enable-debug && make -j8 && make install'echo ''
+echo 'libva'
+echo 'git clean -dxf && ./autogen.sh --prefix=$VAAPI_PREFIX && make -j8 && make install'echo ''
+echo 'ffmpeg'
+echo 'git clean -dxf && ./configure --prefix=$VAAPI_PREFIX && make -j8 && make install'echo ''
+echo 'git-clang-format --style=Webkit --binary=clang-format-3.7 HEAD^'
+ziyao
+2:18 PM
+
+
+[‎6/‎28/‎2017 2:16 PM] Wu, DongpingX:
+pkg-config --cflags --libs libva
+pkg-config --cflags --libs libyami
+
+
+ziyao
+2:27 PM
+echo 'libyami gtest'
+echo 'git clean -dxf && ./autogen.sh --prefix=$LIBYAMI_PREFIX --enable-h264enc --enable-jpegenc --enable-vp8enc --enable-vp9enc --enable-h265enc --enable-mpeg2dec --enable-vp8dec --enable-vp9dec --enable-jpegdec --enable-h264dec --enable-h265dec --enable-vc1dec --enable-v4l2 --enable-v4l2-ops --enable-dmabuf --enable-gtest=/home/dpwu/source_code/googletest-release-1.7.0 && make -j8 && make install'echo ''
+echo 'libyami:'
+echo 'git clean -dxf && ./autogen.sh --prefix=$LIBYAMI_PREFIX --enable-h264enc --enable-jpegenc --enable-vp8enc --enable-vp9enc --enable-h265enc --enable-mpeg2dec --enable-vp8dec --enable-vp9dec --enable-jpegdec --enable-h264dec --enable-h265dec --enable-vc1dec --enable-v4l2 --enable-v4l2-ops --enable-dmabuf --enable-debug && make -j8 && make install'echo ''
+echo 'libyami utils:'
+echo 'git clean -dxf && ./autogen.sh --prefix=$LIBYAMI_PREFIX --enable-dmabuf --enable-v4l2 --enable-v4l2-glx --enable-v4l2-ops --enable-x11 --enable-wayland --enable-avformat --enable-md5 --enable-tests-gles --enable-dmabuf --enable-debug && make -j8 && make install'echo ''
+echo 'libva'
+echo 'git clean -dxf && ./autogen.sh --prefix=$VAAPI_PREFIX && make -j8 && make install'echo ''
+echo 'ffmpeg'
+echo 'git clean -dxf && ./configure --prefix=$VAAPI_PREFIX && make -j8 && make install'echo ''
+echo 'git-clang-format --style=Webkit --binary=clang-format-3.7 HEAD^'

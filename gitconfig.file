@@ -1,0 +1,13 @@
+[user]
+    email = ziyao.zhang@intel.com
+    name = Zhziyao
+[core]
+       editor = vim
+       gitproxy = /usr/local/bin/socks-gw-complicated.pl
+# [http]
+    # sslVerify = false[http]
+    proxy = http://proxy-shz.intel.com:911/
+[https]
+    proxy = https://proxy-shz.intel.com:911/
+[push]
+    default = simple
